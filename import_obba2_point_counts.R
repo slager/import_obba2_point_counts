@@ -73,9 +73,7 @@ data %>%
   ) %>%
   
   ungroup %>%
-  
-  group_by(BLOCK, POINT) %>%
-  
+    
   select(-BLOCK, -POINT, -Species) %>%
   
   write.csv('obba2_PC_eB_upload.csv',row.names=F)
